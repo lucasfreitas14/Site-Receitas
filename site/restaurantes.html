@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Restaurantes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+@font-face { font-family: United; src: url(font/UnitedKings_PERSONAL_USE_ONLY.otf); }
+@font-face { font-family: Mono; src: url(font/SimplyMono-BookOblique.ttf); }
+
+body {
+    background: linear-gradient(to top, #ff7e5f, #feb47b);
+    min-height: 100vh;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+/* MENU */
+.menu button {
+    font-size: 40px;
+    font-family: Mono;
+    padding: 15px 30px;
+    border-radius: 20px;
+    border: none;
+    background: #b84a2e;
+    color: #4d1305;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* Títulos */
+h1 {
+    font-size: 90px;
+    font-family: United;
+    color: #4d1305;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Textos */
+p {
+    width: 70%;
+    font-size: 38px;
+    font-family: Mono;
+    color: #4d1305;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* Imagens redondas */
+.foto {
+    width: 350px;
+    height: 350px;
+    border-radius: 9999px;
+    object-fit: cover;
+}
+
+/* Container horizontal (título + imagem) */
+.lado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+p {
+    font-size: 38px;
+    font-family: Mono;
+    color: #4d1305;
+    width: 70%;
+    text-align: left; /* alinhar texto à esquerda */
+}
+
+ul {
+    width: 70%;
+    text-align: left; /* alinhar cada item à esquerda */
+}
+
+</style>
+</head>
+<body>
+
+<div class="conteudo">
+
+    <!-- MENU -->
+     <div class="menu">
+    <button onclick="location.href='index.html'">Menu</button>
+    <button onclick="location.href='oque.html'">O que é</button>
+    <button onclick="location.href='charcutaria.html'">Charcutaria</button>
+    <button onclick="location.href='receitas.html'">Receitas</button>
+    <button onclick="location.href='restaurantes.html'">Restaurantes</button>
+    </div>
+
+    <!-- Parte 1: Restaurantes -->
+    <div class="lado">
+        <h1>Restaurantes</h1>
+        <img src="imagem/mesas.jpg" class="foto">
+    </div>
+
+    <p>
+      Os restaurantes especializados em churrasco são espaços dedicados à celebração da boa comida e da convivência. Neles, o fogo e o sabor são os protagonistas, oferecendo cortes de carne preparados na brasa, com temperos simples que destacam o gosto natural. Esses locais costumam valorizar a experiência completa, desde o aroma do carvão até o atendimento acolhedor e o ambiente descontraído, ideal para reunir amigos e família.
+    </p>
+
+    <!-- Parte 2: Rodízio -->
+    <div class="lado">
+        <h1>Rodízio</h1>
+        <img src="imagem/carne.jpeg" class="foto">
+    </div>
+
+    <p>
+      O sistema de rodízio é um dos grandes atrativos das churrascarias brasileiras. Nele, os garçons servem uma sequência de cortes — picanha, alcatra, fraldinha, linguiça, entre outros — diretamente nas mesas. Além das carnes, há também um buffet com saladas, queijos, massas e acompanhamentos tradicionais. Essa variedade faz do restaurante de churrasco uma experiência gastronômica completa, combinando fartura, qualidade e tradição.
+    </p>
+
+</div>
+
+</body>
+</html>

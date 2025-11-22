@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Charcutaria</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+@font-face { font-family: United; src: url(font/UnitedKings_PERSONAL_USE_ONLY.otf); }
+@font-face { font-family: Mono; src: url(font/SimplyMono-BookOblique.ttf); }
+
+body {
+    background: linear-gradient(to top, #ff7e5f, #feb47b);
+    min-height: 100vh; /* trocado de height para min-height */
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* antes era center */
+    align-items: center;
+    min-height: 100vh; /* antes era height */
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+h1 {
+    font-size: 90px;
+    font-family: United;
+    color: #4d1305;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 38px;
+    font-family: Mono;
+    color: #4d1305;
+    width: 70%;
+}
+
+img {
+    width: 350px;
+    height: 350px;
+    border-radius: 9999px;
+    object-fit: cover;
+    margin-bottom: 40px;
+}
+
+.menu button {
+    font-size: 40px;
+    font-family: Mono;
+    padding: 15px 30px;
+    border-radius: 20px;
+    border: none;
+    background: #b84a2e;
+    color: #4d1305;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.titulo-lado {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.titulo-lado h1 {
+    font-size: 90px;
+    font-family: United;
+    color: #4d1305;
+}
+
+.titulo-lado img {
+    width: 200px;
+    height: 200px;
+    border-radius: 9999px;
+    object-fit: cover;
+}
+
+.img-pequena {
+    width: 300px;
+    height: 300px;
+    border-radius: 9999px;
+    object-fit: cover;
+    margin-bottom: 40px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="conteudo">
+
+    <div class="menu">
+    <button onclick="location.href='index.html'">Menu</button>
+    <button onclick="location.href='oque.html'">O que é</button>
+    <button onclick="location.href='charcutaria.html'">Charcutaria</button>
+    <button onclick="location.href='receitas.html'">Receitas</button>
+    <button onclick="location.href='restaurantes.html'">Restaurantes</button>
+    </div>
+
+    <div class="titulo-lado">
+    <h1>Charcutaria</h1>
+    <img src="imagem/charcutaria.jpg">
+</div>
+
+    <p>
+       Charcutaria é a arte de preparar, curar e conservar carnes, resultando em produtos como salames, presuntos, linguiças e patês. O termo vem do francês "charcuterie" e historicamente se referia ao comércio de carne de porco, mas hoje engloba diversos tipos de carne, usando técnicas como salga, defumação, fermentação e desidratação para prolongar a vida útil e aprimorar o sabor. 
+    </p>
+
+    <div class="titulo-lado">
+    <h1>Técnicas</h1>
+    <img src="imagem/tecnicas.webp">
+</div>
+
+    <ul style="color: #4d1305;list-style: none; padding: 0;font-size:32px; line-height:1.7; font-family:Mono;">
+    <li>• Cura: Utiliza sal e outros conservantes para retirar a umidade da carne, prevenindo a proliferação de bactérias.</li>
+    <li>• Defumação: Adiciona uma camada de sabor defumado à carne.</li>
+    <li>• Fermentação: Processo que contribui para o desenvolvimento de sabores complexos e textura.</li>
+    <li>• Desidratação: Remove o máximo de água da carne, ajudando na sua conservação.</li>
+    <li>• Cozimento: Processos de cozimento específicos para determinados produtos, como a carne na lata ou mortadela. </li>
+    </ul>
+
+</div>
+
+</body>
+</html>

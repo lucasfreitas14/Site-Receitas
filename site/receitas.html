@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Receitas</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+@font-face { font-family: United; src: url(font/UnitedKings_PERSONAL_USE_ONLY.otf); }
+@font-face { font-family: Mono; src: url(font/SimplyMono-BookOblique.ttf); }
+
+body {
+    background: linear-gradient(to top, #ff7e5f, #feb47b);
+    min-height: 100vh;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+h1 {
+    font-size: 90px;
+    font-family: United;
+    color: #4d1305;
+    margin-bottom: 30px;
+}
+
+img {
+    width: 350px;
+    height: 350px;
+    border-radius: 9999px;
+    object-fit: cover;
+    margin-bottom: 40px;
+}
+
+.menu button {
+    font-size: 40px;
+    font-family: Mono;
+    padding: 15px 30px;
+    border-radius: 20px;
+    border: none;
+    background: #b84a2e;
+    color: #4d1305;
+    margin: 10px;
+    cursor: pointer;
+}
+
+ul {
+    color: #4d1305;
+    list-style: none;
+    padding: 0;
+    font-size: 32px;
+    line-height: 1.7;
+    font-family: Mono;
+    width: 70%;
+    margin-bottom: 40px;
+}
+
+.imagens-lado {
+    display: flex;
+    gap: 40px;          /* espaço entre as fotos */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.imagens-lado img {
+    width: 350px;
+    height: 350px;
+    border-radius: 9999px;
+    object-fit: cover;
+}
+
+</style>
+</head>
+<body>
+
+<div class="conteudo">
+
+     <div class="menu">
+    <button onclick="location.href='index.html'">Menu</button>
+    <button onclick="location.href='oque.html'">O que é</button>
+    <button onclick="location.href='charcutaria.html'">Charcutaria</button>
+    <button onclick="location.href='receitas.html'">Receitas</button>
+    <button onclick="location.href='restaurantes.html'">Restaurantes</button>
+    </div>
+
+    <h1>Receitas</h1>
+
+    <h1>Kafta</h1>
+
+    <div class="imagens-lado">
+    <img src="imagem/kafta1.webp">
+    <img src="imagem/kafta2.webp">
+</div>
+
+    <h1>Ingredientes (10 Porções)</h1>
+
+    <ul>
+        <li>• 1 kg de carne moída duas vezes (coxão mole ou duro)</li>
+        <li>• 3 colheres de sopa bem cheias de cebola picada</li>
+        <li>• 1 colher de chá rasa de sal ou a gosto</li>
+        <li>• 3 colheres de sopa de cheiro verde picado</li>
+        <li>• Palitos para churrasco</li>
+        <li>• óleo para untar a carne, enquanto assa</li>
+    </ul>
+
+    <h1>Modo de Preparo (30 Min)</h1>
+
+    <ul>
+        <li>• Misture a carne com os demais ingredientes e forme uma massa.</li>
+        <li>• Se houver necessidade, isto é, se a massa ficar muito molhada, adicione um pouco de farinha de trigo.</li>
+        <li>• Divida a carne em 12 ou 15 porções.</li>
+        <li>• Pegue cada porção e espalhe - a pelo espeto, comprimindo para aderir bem.</li>
+        <li>• Deve parecer uma salsicha espetada no sentido do comprimento.</li>
+        <li>• Asse sobre uma grelha, virando de vez em quando, para assar por igual e ficar dourada por fora.</li>
+    </ul>
+
+</div>
+
+</body>
+</html>
